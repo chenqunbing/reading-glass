@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#box{
+	display: block;
+	width: 400px;
+	height: 400px;
+	border: 1px solid #CCCCCC;
+	margin: 50px;
+	position: relative;
+}
+#l_box{
+	position: relative;
+	z-index: 1;
+}
+#mask{
+	position: absolute;
+	position: block;
+	width: 400px;
+	height: 400px;
+	background: #FFFFFF;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	z-index: 10;
+	
+}
+#rectangle{
+	display: none;
+	width: 160px;
+	height: 120px;
+	position: absolute;
+	background: #FFFFCC;
+	border: 1px solid #CCCCCC;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+#r_box{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 460px;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid #CCCCCC;
+	z-index: 1;
+}
+#r_box img{
+	position: absolute;
+	z-index: 5;
+}
